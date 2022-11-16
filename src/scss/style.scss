@@ -9,6 +9,29 @@ $main-color: #F0EBD8;
 $box-shadow: 4px 4px 0px 0px $shadow-color;
 
 
+@mixin color-box{
+    color: $main-color;
+    background-color: $compo;
+    box-shadow: $box-shadow;
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+}
+
+@mixin any-box{
+    @include color-box;
+
+    height: 60vh;
+    margin-top: 20px;
+    padding: 0px 20px 0px 20px;
+
+    text-align: justify;
+    word-break: break-all;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body{
     background-color: $bg-color;
 
@@ -19,19 +42,19 @@ body{
     font-family: 'Rubik', sans-serif;
 }
 
+a{
+    color: $main-color;
+    text-decoration: none;
+}
+
 
 .navbar{
     display: flex;
     justify-content: space-between;
 
-    background-color: $compo;
-    color: $main-color; 
-
     padding: 5px 10px 5px 10px;
 
-    box-shadow: $box-shadow;
-    -webkit-box-shadow: $box-shadow;
-    -moz-box-shadow: $box-shadow;
+    @include color-box;
 }
 
 .text__logo{
@@ -52,7 +75,7 @@ body{
     ul>li:nth-child(1){
         margin-right: 10px;
         padding: 10px;
-        border-right: 1px solid white;
+        border-right: 1px solid $main-color;
     }
 }
 
@@ -65,20 +88,7 @@ body{
 // quote box css parts
 
 .quote__compo{
-    height: 60vh;
-    margin-top: 20px;
-    padding: 0px 20px 0px 20px;
-
-    text-align: justify;
-    word-break: break-all;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: $main-color;
-    background-color: $compo;
-    box-shadow: $box-shadow;
+    @include any-box;
 }
 
 .quote{
@@ -93,16 +103,22 @@ body{
     margin-top: 15px;
 
     button{
+        @include color-box;
+
         border-radius: 0px;
         border: none;
 
         font-size: 16px;
 
-        color: $main-color;
-        background-color: $compo;
-        box-shadow: $box-shadow;
-
         margin-right: 10px;
         padding: 10px;
     }
 }
+
+// about page css parts
+
+
+.about__box{
+    @include any-box;
+}
+
