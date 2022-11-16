@@ -1,15 +1,23 @@
-import React from 'react'
+import {Link} from 'react-router-dom';
 
 function Thenavbar() {
   return (
     <div className='navbar'>
         <span className='text__logo'>
-            Quotter
+            <Link to="/">
+                Quotter
+            </Link>
         </span>
         <div className='menu'>
             <ul>
-                <li>About</li>
-                <li>Github</li>
+                <li>
+                    <Link to="/About">
+                        About
+                    </Link>
+                </li>
+                <li>
+                    Github
+                </li>
             </ul>
         </div>
     </div>
