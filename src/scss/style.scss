@@ -8,6 +8,10 @@ $main-color: #F0EBD8;
 
 $box-shadow: 4px 4px 0px 0px $shadow-color;
 
+@mixin space-item {
+    display: flex;
+    justify-content: space-between;
+}
 
 @mixin color-box{
     color: $main-color;
@@ -49,8 +53,7 @@ a{
 
 
 .navbar{
-    display: flex;
-    justify-content: space-between;
+    @include space-item;
 
     padding: 5px 10px 5px 10px;
 
@@ -100,6 +103,8 @@ a{
 }
 
 .quote__button{
+    @include space-item;
+
     margin-top: 15px;
 
     button{
@@ -110,8 +115,11 @@ a{
 
         font-size: 16px;
 
-        margin-right: 10px;
         padding: 10px;
+    }
+
+    .space__me{
+        margin-right: 10px;
     }
 }
 
