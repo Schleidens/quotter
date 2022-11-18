@@ -1,22 +1,20 @@
 import React from 'react'
 
-function Quotebox() {
+function Quotebox(props) {
   return (
         <>
             <div className='quote__compo'>
                 <div>
                     <div className='quote'>
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Illum ducimus ab, illo voluptas minus nostrum obcaecati,
-                        commodi et debitis exercitationem dignissimos labore nulla ratione.
-                        Excepturi provident eius recusandae nesciunt itaque!"   
+                        {props.quote}  
                     </div>
                     <span className='author'>
-                            _Author
+                            {`_${props.author}`}
                     </span>
                 </div>
             </div>
             <div className='quote__button'>
+                <div>
                 <button>
                     Clipboard
                 </button>
@@ -24,6 +22,7 @@ function Quotebox() {
                 <button>
                     Twitter
                 </button>
+                </div>
             </div>
         </>
   )
