@@ -6,7 +6,7 @@ function Quotebox(props) {
             <div className='quote__compo'>
                 <div>
                     <div className='quote'>
-                        {props.quote}  
+                        {`"${props.quote}"`}  
                     </div>
                     <span className='author'>
                             {`_${props.author}`}
@@ -20,7 +20,9 @@ function Quotebox(props) {
                 </button>
                    
                 <button>
-                    Twitter
+                    <a href={`https://twitter.com/intent/tweet?text=${props.quote}  _${props.author}`} target="blank">
+                        Twitter
+                    </a>
                 </button>
                 </div>
             </div>
