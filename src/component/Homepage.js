@@ -9,13 +9,17 @@ function Homepage() {
     return randomQuote;
     };
 
-  const [quote] = useState(generateRandomQuote(quotes));
+  const [quote, setQuote] = useState(generateRandomQuote(quotes));
+
+  const generateNewQuote = () =>{
+    setQuote(generateRandomQuote(quotes))
+  }
 
 
 
   return (
     <div>
-        <Quotebox  quote={quote.quote} author={quote.author}/>
+        <Quotebox  quote={quote.quote} author={quote.author} generateNewQuote={generateNewQuote}/>
     </div>
     
   )
