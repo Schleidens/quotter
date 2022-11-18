@@ -16,7 +16,9 @@ function Thenavbar() {
                     </Link>
                 </li>
                 <li>
-                    Github
+                   <a href="https://github.com/Schleidens/quotter" target="blank">
+                        Github
+                   </a>
                 </li>
             </ul>
         </div>
