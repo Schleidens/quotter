@@ -4,6 +4,9 @@ import Quotebox from "./layouts/Quotebox"
 import quotes from "../db/quoteDb"
 
 function Homepage() {
+
+  document.title = "Quotter | A programming quote generator webapp";
+
   function generateRandomQuote(arr){
     let randomQuote = arr[Math.floor(Math.random() * arr.length)];
     return randomQuote;
