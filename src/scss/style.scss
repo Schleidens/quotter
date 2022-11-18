@@ -144,5 +144,17 @@ a{
 
 .about__box{
     @include any-box;
+
+    .about__links{
+        margin-top: 10px;
+
+        a{
+            margin: 0px 10px 0px 10px;
+        }
+    }
+
+    a{
+        text-decoration: underline;
+    }
 }
 

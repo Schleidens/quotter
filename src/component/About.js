@@ -1,10 +1,21 @@
 import React from 'react'
 
 function About() {
+
+  document.title = "Quotter | About";
+
   return (
     <>
         <div className="about__box">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae necessitatibus, molestiae quo libero, aspernatur unde dolore earum fugiat eaque doloremque error quaerat debitis, rerum officia hic sint eius ullam.
+          <p>
+            <b>Quotter</b> is programming quote generator website <br />
+             Project made with &#9829; by <a href="https://github.com/Schleidens">Schleidens</a>
+             <div className='about__links'>
+                &#128073;
+                <a href="https://twitter.com/schleidens_dev" target="blank">Follow on twitter</a>  |   
+                <a href="https://github.com/Schleidens" target="blank" >Follow on Github</a>
+              </div>  
+          </p>
         </div>
     </>
   )
