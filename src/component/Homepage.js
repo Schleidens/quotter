@@ -15,7 +15,7 @@ function Homepage() {
   const [quote, setQuote] = useState(generateRandomQuote(quotes));
   const [copied, setCopied] = useState(false)
 
-  const quoteForCopy = `${quote.quote}  _${quote.author}`
+  const quoteForCopy = `"${quote.quote}"  _${quote.author}`
 
   const copyQuote = () =>{
     navigator.clipboard.writeText(quoteForCopy)

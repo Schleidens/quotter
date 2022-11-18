@@ -8,7 +8,7 @@ function About() {
     <>
         <div className="about__box">
           <div>
-            <b>Quotter</b> is programming quote generator website <br />
+            <b>Quotter</b> is a programming quote generator website <br />
              Project made with &#9829; by <a href="https://github.com/Schleidens">Schleidens</a>
              <div className='about__links'>
                 &#128073;
