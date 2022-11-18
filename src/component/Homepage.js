@@ -11,6 +11,12 @@ function Homepage() {
 
   const [quote, setQuote] = useState(generateRandomQuote(quotes));
 
+  const quoteForCopy = `${quote.quote}  _${quote.author}`
+
+  const copyQuote = () =>{
+    navigator.clipboard.writeText(quoteForCopy)
+  }
+
   const generateNewQuote = () =>{
     setQuote(generateRandomQuote(quotes))
   }
@@ -19,7 +25,7 @@ function Homepage() {
 
   return (
     <div>
-        <Quotebox  quote={quote.quote} author={quote.author} generateNewQuote={generateNewQuote}/>
+        <Quotebox  quote={quote.quote} author={quote.author} copyQuote={copyQuote} generateNewQuote={generateNewQuote}/>
     </div>
     
   )

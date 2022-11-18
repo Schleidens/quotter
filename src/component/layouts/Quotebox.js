@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Quotebox(props, generateNewQuote) {
+function Quotebox(props, generateNewQuote, copyQuote) {
 
   return (
         <>
@@ -16,7 +16,7 @@ function Quotebox(props, generateNewQuote) {
             </div>
             <div className='quote__button'>
                 <div>
-                <button className='space__me'>
+                <button className='space__me' onClick={props.copyQuote}>
                     Clipboard
                 </button>
                    
