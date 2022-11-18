@@ -7,7 +7,7 @@ function About() {
   return (
     <>
         <div className="about__box">
-          <p>
+          <div>
             <b>Quotter</b> is programming quote generator website <br />
              Project made with &#9829; by <a href="https://github.com/Schleidens">Schleidens</a>
              <div className='about__links'>
@@ -15,7 +15,7 @@ function About() {
                 <a href="https://twitter.com/schleidens_dev" target="blank">Follow on twitter</a>  |   
                 <a href="https://github.com/Schleidens" target="blank" >Follow on Github</a>
               </div>  
-          </p>
+          </div>
         </div>
     </>
   )
