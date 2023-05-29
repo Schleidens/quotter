@@ -50,8 +50,15 @@ const quotes = [
 {
 "quote": "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live",
 "author": "John Woods"
-}
-
+},
+    {
+        "quote": "I'm not a great programmer; I'm just a good programmer with great habits.",
+        "author": "Kent Beck"
+    },
+    {
+        "quote": "Give a man a program, frustrate him for a day. Teach a man to program, frustrate him for a lifetime.",
+        "author": "Muhammad Waseem"
+    
 
 ]
 
